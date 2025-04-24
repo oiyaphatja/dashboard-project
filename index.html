@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>Power BI Dashboard Decision Support Data  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power BI Dashboard Decision Support Data</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,14 +32,118 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
+    /* Header and navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    /* Sidebar */
+    aside {
+      width: 250px;
+      background-color: #f0f4f7;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      border-right: 2px solid #ccc;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside ul li {
+      padding: 10px;
+      font-size: 1.1rem;
+    }
+
+    aside ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    aside ul li a:hover {
+      color: #4CAF50;
+    }
+
+    /* Main content */
+    main {
+      margin-left: 270px;
+      padding: 2rem;
+    }
+
+    footer {
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>Power BI Dashboard</h1>
-  <p class="description">This dashboard displays purchase order data from Makro over the past 3 months.</p>
-  <iframe title="Test"
-          src="https://app.powerbi.com/view?r=eyJrIjoiMzI2MjgwNDItMTYyMS00ZTljLTk5ZmQtMGZmYTQ0M2I5OGJiIiwidCI6IjBjNGUyYWY5LWNiYzktNDU5YS04NDRkLTMxMjg4ZWI3ZWZmYiIsImMiOjEwfQ%3D%3D"
-          allowFullScreen="true">
-  </iframe>
+  <!-- Header -->
+  <header>
+    <div class="logo">Power BI Dashboard</div>
+    <nav>
+      <ul>
+        <li><a href="#">แดชบอร์ด</a></li>
+        <li><a href="#">รายงาน</a></li>
+        <li><a href="#">การตั้งค่า</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside>
+    <ul>
+      <li><a href="#">กราฟเปรียบเทียบ</a></li>
+      <li><a href="#">ข้อมูลรายเดือน</a></li>
+      <li><a href="#">การตั้งค่าผู้ใช้</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Power BI Dashboard</h1>
+    <p class="description">This dashboard displays purchase order data from Makro over the past 3 months.</p>
+    <iframe title="Test"
+            src="https://app.powerbi.com/view?r=eyJrIjoiMzI2MjgwNDItMTYyMS00ZTljLTk5ZmQtMGZmYTQ0M2I5OGJiIiwidCI6IjBjNGUyYWY5LWNiYzktNDU5YS04NDRkLTMxMjg4ZWI3ZWZmYiIsImMiOjEwfQ%3D%3D"
+            allowFullScreen="true">
+    </iframe>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>ลิขสิทธิ์ © 2025 ระบบการจัดการข้อมูล</p>
+  </footer>
 </body>
 </html>
