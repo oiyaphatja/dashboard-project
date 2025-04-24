@@ -5,25 +5,37 @@
   <title>Power BI Dashboard</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 2rem;
       text-align: center;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.description {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #666;
     }
 
     iframe {
       width: 100%;
       max-width: 960px;
       height: 600px;
-      border: none;
-    }
-
-    h1 {
-      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
   <h1>Power BI Dashboard</h1>
+  <p class="description">This dashboard displays purchase order data from Makro over the past 3 months.</p>
   <iframe title="Test"
           src="https://app.powerbi.com/view?r=eyJrIjoiMzI2MjgwNDItMTYyMS00ZTljLTk5ZmQtMGZmYTQ0M2I5OGJiIiwidCI6IjBjNGUyYWY5LWNiYzktNDU5YS04NDRkLTMxMjg4ZWI3ZWZmYiIsImMiOjEwfQ%3D%3D"
           allowFullScreen="true">
