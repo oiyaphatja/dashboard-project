@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <!-- เพิ่มรูปภาพโลโก้ -->
+    <img src="m01.png" alt="Logo" class="logo" />
+
+    <h2>login</h2>
+    <input type="text" id="username" placeholder="ชื่อผู้ใช้" />
+    <input type="password" id="password" placeholder="รหัสผ่าน" />
+    <button onclick="login()">เข้าสู่ระบบ</button>
+    <p id="error" class="error-message"></p>
+    <!-- ข้อความที่ต้องการเพิ่ม -->
+    <p class="access-message">If you do not have access rights, please contact the administrator.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

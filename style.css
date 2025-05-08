@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6fa;
+    color: #333;
+  }
+  
+  /* ✅ Login Page */
+  .login-container {
+    max-width: 360px;
+    margin: 120px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* ✅ Dashboard Page */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .sidebar nav ul li.active,
+  .sidebar nav ul li:hover {
+    background-color: #e7f0ff;
+    color: #1E90FF;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user .avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .settings {
+    margin-left: auto;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .analytics {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .analytics .views, .analytics .targets {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .progress-bar {
+    margin-top: 15px;
+  }
+  
+  .progress-bar span {
+    font-size: 14px;
+  }
+  
+  .progress-bar div {
+    width: 100%;
+    background-color: #eee;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .progress-bar div div {
+    height: 8px;
+  }
+  
+  .meetings {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .meetings ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .meetings li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* จัดให้อยู่กลางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กลางในแนวนอน */
+    text-align: center; /* ทำให้ข้อความใน card อยู่กลาง */
+}
+
+.card-btn {
+    width: 80%; /* ขนาดปุ่มไม่ให้เต็ม */
+    padding: 12px;
+    background: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px; /* ช่องว่างระหว่างหัวข้อและปุ่ม */
+}
+
+.card-btn:hover {
+    background: #1C86EE;
+}
+.logo {
+  display: block;
+  margin: 0 auto;  /* จัดให้รูปภาพอยู่ตรงกลาง */
+  width: 100px;  /* ขนาดของรูปภาพ */
+  height: auto;  /* รักษาสัดส่วนของรูปภาพ */
+}
+.access-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+.logo {
+  width: 150px; /* กำหนดความกว้าง */
+  height: auto; /* ความสูงจะถูกคำนวณอัตโนมัติตามอัตราส่วน */
+}
+.oval-button {
+  padding: 6px 20px;            /* ลดขนาดปุ่ม */
+  border: 2px solid #007BFF;
+  background-color: transparent;
+  color: #007BFF;
+  border-radius: 30px;
+  font-size: 14px;              /* ลดขนาดตัวอักษร */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.oval-button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+.logo {
+  font-size: 16px; /* ปรับขนาดตามต้องการ เช่น 16px หรือเล็กกว่านี้ */
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+}
+.logo img {
+  max-width: 130%;
+  height: auto; /* เพื่อรักษาสัดส่วนของโลโก้ */
+}
+
+.logo {
+  text-align: center; /* จัดตำแหน่งโลโก้ให้อยู่กลาง */
+  padding: 20px 0; /* เว้นระยะด้านบนและล่าง */
+}
+
+.logo img {
+  max-width: 100%; /* ปรับขนาดโลโก้ไม่ให้ใหญ่เกินไป */
+  height: auto; /* รักษาสัดส่วนภาพ */
+}
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8f9fb;
+  padding: 20px;
+}
+
+.profile-container {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-info {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-details p {
+  font-size: 14px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.team-card {
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.team-header img {
+  width: 50px;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.team-info span {
+  font-size: 14px;
+  color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
+.badge.approved {
+  background-color: #28a745;
+}
+
+.badge.fulfilled {
+  background-color: #17a2b8;
+}
+/* style.css */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fb;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #0d2149;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.horizontal-menu {
+  margin-top: 20px;
+}
+
+.horizontal-menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.horizontal-menu li {
+  margin: 0;
+}
+
+.horizontal-menu a {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.horizontal-menu a:hover {
+  background-color: #f91111;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: #f50f0f;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.menu-spacer {
+  flex-grow: 1;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: #333333;
+  font-size: 24px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.access-message {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
